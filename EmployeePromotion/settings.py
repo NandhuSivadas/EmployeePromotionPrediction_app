@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-5)4c0qkui(zka%xp##0a2%-)jr4@&791)q)3pk^y5*lx%@djq6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    "employeepromotionprediction-app-1.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
+    
 
 # Application definition
 
