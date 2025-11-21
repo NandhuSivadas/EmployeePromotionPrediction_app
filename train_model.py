@@ -43,7 +43,7 @@ test_data.to_csv("Dataset/test.csv", index=False)
 print("✅ Test dataset (20%) saved as 'Dataset/test.csv'")
 
 # --------------------------
-# 5️⃣ Train Random Forest and XGBoost on SMOTEd training data
+# 5️ Train Random Forest and XGBoost on SMOTEd training data
 # --------------------------
 rf_model = RandomForestClassifier(min_samples_leaf=10, min_samples_split=20, random_state=42)
 rf_model.fit(X_train, y_train)
@@ -52,7 +52,7 @@ xgb_model = XGBClassifier(random_state=42, eval_metric='logloss')
 xgb_model.fit(X_train, y_train)
 
 # --------------------------
-# 6️⃣ Evaluate training performance with metrics + confusion matrix
+# 6️ Evaluate training performance with metrics + confusion matrix
 # --------------------------
 def training_metrics_with_cm(model, X_train, y_train, model_name):
     y_pred = model.predict(X_train)
