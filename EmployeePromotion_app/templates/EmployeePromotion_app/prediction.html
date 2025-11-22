@@ -160,9 +160,16 @@
         cursor:pointer;
     }
 
+    small.text-danger {
+        color: red !important;
+        font-size: 14px;
+    }
+</style>
+
 </style>
 
 </head>
+
 
 <body>
 
@@ -182,56 +189,57 @@
             <label>Department</label>
             <select name="department" required>
                 <option value="">-- Select Department --</option>
-                <option value="Sales & Marketing">Sales & Marketing</option>
-                <option value="Operations">Operations</option>
-                <option value="Technology">Technology</option>
-                <option value="Analytics">Analytics</option>
-                <option value="R&D">R&D</option>
-                <option value="Procurement">Procurement</option>
-                <option value="Finance">Finance</option>
-                <option value="HR">HR</option>
-                <option value="Legal">Legal</option>
+                <option value="Sales & Marketing" {% if form_data.department == "Sales & Marketing" %}selected{% endif %}>Sales & Marketing</option>
+                <option value="Operations" {% if form_data.department == "Operations" %}selected{% endif %}>Operations</option>
+                <option value="Technology" {% if form_data.department == "Technology" %}selected{% endif %}>Technology</option>
+                <option value="Analytics" {% if form_data.department == "Analytics" %}selected{% endif %}>Analytics</option>
+                <option value="R&D" {% if form_data.department == "R&D" %}selected{% endif %}>R&D</option>
+                <option value="Procurement" {% if form_data.department == "Procurement" %}selected{% endif %}>Procurement</option>
+                <option value="Finance" {% if form_data.department == "Finance" %}selected{% endif %}>Finance</option>
+                <option value="HR" {% if form_data.department == "HR" %}selected{% endif %}>HR</option>
+                <option value="Legal" {% if form_data.department == "Legal" %}selected{% endif %}>Legal</option>
             </select>
+
         </div>
 
 <div>
                 <label>Region</label>
                 <select name="region" required>
                     <option value="">-- Select Region --</option>
-                    <option value="region_1">Region 1</option>
-                    <option value="region_2">Region 2</option>
-                    <option value="region_3">Region 3</option>
-                    <option value="region_4">Region 4</option>
-                    <option value="region_5">Region 5</option>
-                    <option value="region_6">Region 6</option>
-                    <option value="region_7">Region 7</option>
-                    <option value="region_8">Region 8</option>
-                    <option value="region_9">Region 9</option>
-                    <option value="region_10">Region 10</option>
-                    <option value="region_11">Region 11</option>
-                    <option value="region_12">Region 12</option>
-                    <option value="region_13">Region 13</option>
-                    <option value="region_14">Region 14</option>
-                    <option value="region_15">Region 15</option>
-                    <option value="region_16">Region 16</option>
-                    <option value="region_17">Region 17</option>
-                    <option value="region_18">Region 18</option>
-                    <option value="region_19">Region 19</option>
-                    <option value="region_20">Region 20</option>
-                    <option value="region_21">Region 21</option>
-                    <option value="region_22">Region 22</option>
-                    <option value="region_23">Region 23</option>
-                    <option value="region_24">Region 24</option>
-                    <option value="region_25">Region 25</option>
-                    <option value="region_26">Region 26</option>
-                    <option value="region_27">Region 27</option>
-                    <option value="region_28">Region 28</option>
-                    <option value="region_29">Region 29</option>
-                    <option value="region_30">Region 30</option>
-                    <option value="region_31">Region 31</option>
-                    <option value="region_32">Region 32</option>
-                    <option value="region_33">Region 33</option>
-                    <option value="region_34">Region 34</option>
+                    <option value="region_1" {% if form_data.region == "region_1" %}selected{% endif %}>Region 1</option>
+                    <option value="region_2" {% if form_data.region == "region_2" %}selected{% endif %}>Region 2</option>
+                    <option value="region_3" {% if form_data.region == "region_3" %}selected{% endif %}>Region 3</option>
+                    <option value="region_4" {% if form_data.region == "region_4" %}selected{% endif %}>Region 4</option>
+                    <option value="region_5" {% if form_data.region == "region_5" %}selected{% endif %}>Region 5</option>
+                    <option value="region_6" {% if form_data.region == "region_6" %}selected{% endif %}>Region 6</option>
+                    <option value="region_7" {% if form_data.region == "region_7" %}selected{% endif %}>Region 7</option>
+                    <option value="region_8" {% if form_data.region == "region_8" %}selected{% endif %}>Region 8</option>
+                    <option value="region_9" {% if form_data.region == "region_9" %}selected{% endif %}>Region 9</option>
+                    <option value="region_10" {% if form_data.region == "region_10" %}selected{% endif %}>Region 10</option>
+                    <option value="region_11" {% if form_data.region == "region_11" %}selected{% endif %}>Region 11</option>
+                    <option value="region_12" {% if form_data.region == "region_12" %}selected{% endif %}>Region 12</option>
+                    <option value="region_13" {% if form_data.region == "region_13" %}selected{% endif %}>Region 13</option>
+                    <option value="region_14" {% if form_data.region == "region_14" %}selected{% endif %}>Region 14</option>
+                    <option value="region_15" {% if form_data.region == "region_15" %}selected{% endif %}>Region 15</option>
+                    <option value="region_16" {% if form_data.region == "region_16" %}selected{% endif %}>Region 16</option>
+                    <option value="region_17" {% if form_data.region == "region_17" %}selected{% endif %}>Region 17</option>
+                    <option value="region_18" {% if form_data.region == "region_18" %}selected{% endif %}>Region 18</option>
+                    <option value="region_19" {% if form_data.region == "region_19" %}selected{% endif %}>Region 19</option>
+                    <option value="region_20" {% if form_data.region == "region_20" %}selected{% endif %}>Region 20</option>
+                    <option value="region_21" {% if form_data.region == "region_21" %}selected{% endif %}>Region 21</option>
+                    <option value="region_22" {% if form_data.region == "region_22" %}selected{% endif %}>Region 22</option>
+                    <option value="region_23" {% if form_data.region == "region_23" %}selected{% endif %}>Region 23</option>
+                    <option value="region_24" {% if form_data.region == "region_24" %}selected{% endif %}>Region 24</option>
+                    <option value="region_25" {% if form_data.region == "region_25" %}selected{% endif %}>Region 25</option>
+                    <option value="region_26" {% if form_data.region == "region_26" %}selected{% endif %}>Region 26</option>
+                    <option value="region_27" {% if form_data.region == "region_27" %}selected{% endif %}>Region 27</option>
+                    <option value="region_28" {% if form_data.region == "region_28" %}selected{% endif %}>Region 28</option>
+                    <option value="region_29" {% if form_data.region == "region_29" %}selected{% endif %}>Region 29</option>
+                    <option value="region_30" {% if form_data.region == "region_30" %}selected{% endif %}>Region 30</option>
+                    <option value="region_31" {% if form_data.region == "region_31" %}selected{% endif %}>Region 31</option>
+                    <option value="region_32" {% if form_data.region == "region_32" %}selected{% endif %}>Region 32</option>
+                    <option value="region_33" {% if form_data.region == "region_33" %}selected{% endif %}>Region 33</option>
+                    <option value="region_34" {% if form_data.region == "region_34" %}selected{% endif %}>Region 34</option>
                 </select>
             </div>
 
@@ -239,39 +247,47 @@
             <label>Education</label>
             <select name="education" required>
                 <option value="">-- Select --</option>
-                <option value="Master's & above">Master's & Above</option>
-                <option value="Bachelor's">Bachelor's</option>
-                <option value="Below Secondary">Below Secondary</option>
+                <option value="Master's & above" {% if form_data.education == "Master's & above" %}selected{% endif %}>Master's & Above</option>
+                <option value="Bachelor's" {% if form_data.education == "Bachelor's" %}selected{% endif %}>Bachelor's</option>
+                <option value="Below Secondary" {% if form_data.education == "Below Secondary" %}selected{% endif %}>Below Secondary</option>
             </select>
+
         </div>
 
         <div>
             <label>Gender</label>
             <select name="gender" required>
                 <option value="">-- Select --</option>
-                <option value="f">Female</option>
-                <option value="m">Male</option>
+                <option value="f" {% if form_data.gender == "f" %}selected{% endif %}>Female</option>
+                <option value="m" {% if form_data.gender == "m" %}selected{% endif %}>Male</option>
             </select>
+
         </div>
 
         <div>
             <label>Recruitment Channel</label>
             <select name="recruitment_channel" required>
-                <option value="">-- Select  --</option>
-                <option value="sourcing">Sourcing</option>
-                <option value="other">Other</option>
-                <option value="referred">Referred</option>
+                <option value="">-- Select --</option>
+                <option value="sourcing" {% if form_data.recruitment_channel == "sourcing" %}selected{% endif %}>Sourcing</option>
+                <option value="other" {% if form_data.recruitment_channel == "other" %}selected{% endif %}>Other</option>
+                <option value="referred" {% if form_data.recruitment_channel == "referred" %}selected{% endif %}>Referred</option>
             </select>
+
         </div>
 
         <div>
             <label>No. of Trainings</label>
-            <input type="number" name="no_of_trainings" required>
+            <input type="number" name="no_of_trainings" value="{{ form_data.no_of_trainings }}">
+
         </div>
 
         <div>
             <label>Age</label>
-            <input type="number" name="age" required>
+            <input type="number" name="age" class="form-control" value="{{ form_data.age }}" required>
+            {% if errors.age %}
+            <small class="text-danger"><i>{{ errors.age }}</i></small>
+            {% endif %}
+
         </div>
 
         <div>
@@ -288,17 +304,22 @@
 
         <div>
             <label>Length of Service (Years)</label>
-            <input type="number" name="length_of_service" required>
+            <input type="number" name="length_of_service" value="{{ form_data.length_of_service }}"required>
         </div>
 
         <div>
             <label>Awards Won</label>
-            <input type="number" name="awards_won" required>
+            <input type="number" name="awards_won" value="{{ form_data.awards_won }}" required>
         </div>
 
         <div>
             <label>Average Training Score</label>
-            <input type="number" name="avg_training_score" step="0.1" required>
+            <input type="number" name="avg_training_score" class="form-control"
+            value="{{ form_data.avg_training_score }}" required>
+            {% if errors.avg_training_score %}
+            <small class="text-danger"><i>{{ errors.avg_training_score }}</i></small>
+            {% endif %}
+
         </div>
 
         <!-- PREDICT BUTTON -->
